@@ -11,7 +11,7 @@ app.use(
   cors({
     origin: [
       "http://localhost:5173",
-      "https://shopverse-client-kappa.vercel.app",
+      "https://shopverse-client.vercel.app",
     ],
     credentials: true,
   })
