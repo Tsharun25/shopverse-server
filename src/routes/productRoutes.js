@@ -5,6 +5,7 @@ const {
   createProduct,
   getSingleProduct,
   deleteProduct,
+  updateProduct,
 } = require("../controllers/productController");
 
 const {
@@ -17,6 +18,7 @@ const router = express.Router();
 router.get("/", getProducts);
 router.get("/:id", getSingleProduct);
 router.delete("/:id", protect, adminOnly, deleteProduct);
+router.put("/:id", protect, adminOnly, updateProduct);
 
 router.post(
   "/",
